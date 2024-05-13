@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+<meta charset="UTF-8">
+<title>Encuesta Marvel</title>
+<link rel="stylesheet" href="styles.css" />
+
+<body>
+  <h1 id="title">Encuesta Marvel</h1>
+  <p id="description">Queremos saber tu opinion acerca del universo marvel</p>
+  <form id="survey-form">
+    <div class="form-section">
+      <label for="name" id="name-label">Nombre</label>
+      <input 
+        id="name" 
+        type="text" 
+        placeholder="Ingresa tu nombre" 
+        required/>
+    </div>
+    <div class="form-section">
+      <label for="email" id="email-label">Email</label>
+      <input 
+        id="email" 
+        type="email" 
+        placeholder="Ingresa tu email" 
+        required />
+    </div>
+    <div class="form-section">
+      <label for="number" id="number-label">Edad</label>
+      <input
+        id="number"
+        type="number"
+        max="120"
+        min="6"
+        placeholder="Ingresa tu edad"/>
+    </div>
+    <div class="form-section">
+      <label for="dropdown">Preferis las peliculas o las series?</label>
+      <select id="dropdown" required>
+            <option disabled selected value>(seleccione uno)</option>
+            <option value="1">Peliculas</option>
+            <option value="2">Series</option>
+      </select>
+    </div>
+    <div class="form-section">
+      <p>Account type</p>
+      <label for="personal-account">
+        <input
+          id="personal-account"
+          type="radio"
+          name="account-type"
+          class="inline"
+          value="personal"
+          checked
+        />Personal
+      </label>
+      <label for="business-account">
+        <input 
+          id="business-account" 
+          type="radio" 
+          name="account-type" 
+          class="inline" 
+          value="business"
+        />Business
+      </label>
+    </div>
+    <div class="form-section">
+      <p>Personajes favoritos</p>
+      <label>
+        <input 
+          class="inline" 
+          type="checkbox"
+          value="Iron Man"
+        />Iron Man
+      </label>
+      <label>
+        <input 
+          class="inline" 
+          type="checkbox"
+          value="Capitan America"
+        />Capitan America
+      </label>
+      <label>
+        <input 
+          class="inline" 
+          type="checkbox"
+          value="Dr. Strange"
+        />Dr. Strange
+      </label>
+    </div>
+    <div class="form-section">
+      <p>Comentarios adicionales</p>
+      <textarea
+        placeholder="Ingrese su comentario aqui..."
+        rows="4"
+      ></textarea>
+    </div>
+    <div>
+      <input 
+        id="submit" 
+        type="submit" 
+        value="Enviar" />
+    </div>
+  </form>
+</body>
+
+
+</html>
